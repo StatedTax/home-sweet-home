@@ -18,6 +18,7 @@ const products = [
     category: "Пижами",
     image: dadapizami,
     badge: "Ново",
+    price: 890,
   },
   {
     id: 2,
@@ -25,6 +26,7 @@ const products = [
     category: "Пижами",
     image: dadapizami2,
     badge: "Популарно",
+    price: 790,
   },
   {
     id: 3,
@@ -32,6 +34,7 @@ const products = [
     category: "Детски постелнини",
     image: kitty,
     badge: null,
+    price: 1490,
   },
   {
     id: 4,
@@ -39,6 +42,7 @@ const products = [
     category: "Пижами",
     image: life,
     badge: "Ново",
+    price: 850,
   },
   {
     id: 5,
@@ -46,6 +50,7 @@ const products = [
     category: "Крпи и пешкири",
     image: krpicki,
     badge: null,
+    price: 590,
   },
   {
     id: 6,
@@ -53,6 +58,7 @@ const products = [
     category: "Бебешки производи",
     image: majmun,
     badge: null,
+    price: 1290,
   },
   {
     id: 7,
@@ -60,6 +66,7 @@ const products = [
     category: "Постелнини",
     image: edinecni,
     badge: "Нова колекција",
+    price: 1690,
   },
   {
     id: 8,
@@ -67,6 +74,7 @@ const products = [
     category: "Пижами",
     image: maski,
     badge: "Нова колекција",
+    price: 750,
   },
 ];
 
@@ -116,6 +124,9 @@ const ProductsSection = () => {
                 <h3 className="font-serif font-semibold text-foreground group-hover:text-primary transition-colors">
                   {product.name}
                 </h3>
+                <p className="text-lg font-bold text-primary mt-2">
+                  {product.price.toLocaleString('mk-MK')} ден.
+                </p>
               </div>
             </div>
           ))}
