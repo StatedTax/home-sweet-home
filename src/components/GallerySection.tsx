@@ -5,15 +5,27 @@ import gallery4 from "@/assets/gallery-4.jpg";
 import gallery5 from "@/assets/gallery-5.jpg";
 import gallery6 from "@/assets/gallery-6.jpg";
 import gallery7 from "@/assets/gallery-7.jpg";
+import novagodisno from "@/assets/novagodisno.png";
+import detskiPizami from "@/assets/detski-pizami.jpg";
+import kuferiMali from "@/assets/kuferi-mali.jpg";
+import navlaki from "@/assets/navlaki.png";
+import ananas from "@/assets/ananas.png";
+import nezz from "@/assets/nezz.png";
 
 const galleryImages = [
   { src: gallery1, alt: "Sweet Dreams зимски пижами" },
+  { src: novagodisno, alt: "Новогодишни производи" },
   { src: gallery2, alt: "Meow or Never летни пижами" },
   { src: gallery3, alt: "Life is Sweet фустани" },
+  { src: detskiPizami, alt: "Детски пижами" },
   { src: gallery4, alt: "Just Let Me Sleep пижами" },
   { src: gallery5, alt: "Детски пижами" },
+  { src: kuferiMali, alt: "Детски куфери" },
   { src: gallery6, alt: "Wild and Free зимска колекција" },
+  { src: navlaki, alt: "Навлаки за перници" },
   { src: gallery7, alt: "Прекривки за софа" },
+  { src: ananas, alt: "Ананас постелнина" },
+  { src: nezz, alt: "Зимска колекција" },
 ];
 
 const GallerySection = () => {
