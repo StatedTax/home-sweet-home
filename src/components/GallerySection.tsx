@@ -1,17 +1,19 @@
-import novagodisno from "@/assets/novagodisno.png";
-import detskiPizami from "@/assets/detski-pizami.jpg";
-import kuferiMali from "@/assets/kuferi-mali.jpg";
-import navlaki from "@/assets/navlaki.png";
-import ananas from "@/assets/ananas.png";
-import nezz from "@/assets/nezz.png";
+import gallery1 from "@/assets/gallery-1.jpg";
+import gallery2 from "@/assets/gallery-2.jpg";
+import gallery3 from "@/assets/gallery-3.jpg";
+import gallery4 from "@/assets/gallery-4.jpg";
+import gallery5 from "@/assets/gallery-5.jpg";
+import gallery6 from "@/assets/gallery-6.jpg";
+import gallery7 from "@/assets/gallery-7.jpg";
 
 const galleryImages = [
-  { src: novagodisno, alt: "Новогодишни производи" },
-  { src: detskiPizami, alt: "Детски пижами" },
-  { src: kuferiMali, alt: "Детски куфери" },
-  { src: navlaki, alt: "Навлаки за перници" },
-  { src: ananas, alt: "Ананас постелнина" },
-  { src: nezz, alt: "Зимска колекција" },
+  { src: gallery1, alt: "Sweet Dreams зимски пижами" },
+  { src: gallery2, alt: "Meow or Never летни пижами" },
+  { src: gallery3, alt: "Life is Sweet фустани" },
+  { src: gallery4, alt: "Just Let Me Sleep пижами" },
+  { src: gallery5, alt: "Детски пижами" },
+  { src: gallery6, alt: "Wild and Free зимска колекција" },
+  { src: gallery7, alt: "Прекривки за софа" },
 ];
 
 const GallerySection = () => {
@@ -32,7 +34,7 @@ const GallerySection = () => {
         </div>
 
         {/* Gallery Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {galleryImages.map((image, index) => (
             <div
               key={index}
@@ -43,10 +45,12 @@ const GallerySection = () => {
               <img
                 src={image.src}
                 alt={image.alt}
-                className="w-full h-full object-cover aspect-square transition-transform duration-500 group-hover:scale-110"
+                className={`w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 ${
+                  index === 0 ? "aspect-[3/4] md:aspect-auto" : "aspect-square"
+                }`}
               />
               <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/40 transition-colors duration-300 flex items-center justify-center">
-                <span className="text-primary-foreground font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <span className="text-primary-foreground font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center px-2">
                   {image.alt}
                 </span>
               </div>
