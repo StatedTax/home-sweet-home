@@ -31,7 +31,7 @@ const Header = () => {
           </div>
           <div className="flex items-center gap-3">
             <a 
-              href="https://www.facebook.com/HomeSweetHomeMk" 
+              href="https://www.facebook.com/profile.php?id=100089898881859" 
               target="_blank" 
               rel="noopener noreferrer"
               className="hover:opacity-80 transition-opacity"
