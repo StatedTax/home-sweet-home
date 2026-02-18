@@ -1,0 +1,99 @@
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+body { font-family: Calibri, Arial, sans-serif; padding: 20px; }
+h1 { color: #2c3e50; }
+h2 { color: #34495e; margin-top: 30px; }
+table { border-collapse: collapse; width: 100%; margin: 10px 0 20px 0; }
+th, td { border: 1px solid #bdc3c7; padding: 8px 12px; text-align: left; }
+th { background-color: #ecf0f1; font-weight: bold; }
+code { background: #f0f0f0; padding: 2px 5px; font-family: Consolas, monospace; }
+</style>
+</head>
+<body>
+
+<h1>🎨 Home Sweet Home — Design Reference Guide</h1>
+
+<h2>📁 Структура на проектот</h2>
+<table>
+<tr><th>Фајл</th><th>Патека</th><th>Опис</th></tr>
+<tr><td>index.css</td><td>src/index.css</td><td>Глобални стилови, CSS променливи за бои, фонтови</td></tr>
+<tr><td>tailwind.config.ts</td><td>tailwind.config.ts</td><td>Tailwind конфигурација, бои, фонтови, анимации</td></tr>
+<tr><td>App.tsx</td><td>src/App.tsx</td><td>Главна апликација со рутирање</td></tr>
+<tr><td>Index.tsx</td><td>src/pages/Index.tsx</td><td>Главна страница - ги собира сите секции</td></tr>
+<tr><td>components.json</td><td>components.json</td><td>Shadcn/UI конфигурација</td></tr>
+</table>
+
+<h2>🔤 Фонтови</h2>
+<table>
+<tr><th>Елемент</th><th>Фајл</th><th>Линија</th><th>Вредност</th></tr>
+<tr><td>Google Fonts Import</td><td>src/index.css</td><td>1</td><td>Lato (300-900) + Playfair Display (400-700)</td></tr>
+<tr><td>font-sans</td><td>tailwind.config.ts</td><td>~15</td><td>"Lato", sans-serif</td></tr>
+<tr><td>font-serif</td><td>tailwind.config.ts</td><td>~16</td><td>"Playfair Display", serif</td></tr>
+</table>
+
+<h2>🎨 Бои — Light Mode (src/index.css :root)</h2>
+<table>
+<tr><th>Променлива</th><th>Опис</th></tr>
+<tr><td>--background</td><td>Главна позадина</td></tr>
+<tr><td>--foreground</td><td>Главна боја на текст</td></tr>
+<tr><td>--primary</td><td>Примарна боја</td></tr>
+<tr><td>--primary-foreground</td><td>Текст врз примарна боја</td></tr>
+<tr><td>--secondary</td><td>Секундарна боја</td></tr>
+<tr><td>--accent</td><td>Акцент боја</td></tr>
+<tr><td>--muted</td><td>Пригушена позадина</td></tr>
+<tr><td>--card</td><td>Позадина на картички</td></tr>
+<tr><td>--destructive</td><td>Боја за грешки</td></tr>
+<tr><td>--border</td><td>Боја на рамки</td></tr>
+</table>
+
+<h2>🎨 Бренд бои (tailwind.config.ts)</h2>
+<table>
+<tr><th>Име</th><th>Опис</th></tr>
+<tr><td>warm-cream</td><td>Крем позадина</td></tr>
+<tr><td>soft-peach</td><td>Нежна праскова</td></tr>
+<tr><td>sage</td><td>Зелена (sage)</td></tr>
+<tr><td>dusty-rose</td><td>Прашлива роза</td></tr>
+<tr><td>golden</td><td>Златна</td></tr>
+</table>
+
+<h2>📐 Layout</h2>
+<table>
+<tr><th>Елемент</th><th>Фајл</th><th>Вредност</th></tr>
+<tr><td>Container max-width</td><td>tailwind.config.ts</td><td>1400px</td></tr>
+<tr><td>Border radius</td><td>src/index.css</td><td>--radius: 0.75rem</td></tr>
+</table>
+
+<h2>🧩 Компоненти</h2>
+<table>
+<tr><th>Компонента</th><th>Фајл</th><th>Опис</th></tr>
+<tr><td>Header</td><td>src/components/Header.tsx</td><td>Навигација, лого, топ бар</td></tr>
+<tr><td>HeroSection</td><td>src/components/HeroSection.tsx</td><td>Херо банер</td></tr>
+<tr><td>ProductsSection</td><td>src/components/ProductsSection.tsx</td><td>Производи грид</td></tr>
+<tr><td>CategoriesSection</td><td>src/components/CategoriesSection.tsx</td><td>Категории</td></tr>
+<tr><td>AboutSection</td><td>src/components/AboutSection.tsx</td><td>За нас</td></tr>
+<tr><td>TestimonialsSection</td><td>src/components/TestimonialsSection.tsx</td><td>Препораки</td></tr>
+<tr><td>GallerySection</td><td>src/components/GallerySection.tsx</td><td>Галерија</td></tr>
+<tr><td>ContactSection</td><td>src/components/ContactSection.tsx</td><td>Контакт форма</td></tr>
+<tr><td>Footer</td><td>src/components/Footer.tsx</td><td>Футер</td></tr>
+</table>
+
+<h2>🎬 Анимации (tailwind.config.ts)</h2>
+<table>
+<tr><th>Име</th><th>Опис</th></tr>
+<tr><td>fade-in</td><td>Фејд ин ефект</td></tr>
+<tr><td>slide-in</td><td>Слајд од долу</td></tr>
+</table>
+
+<h2>⚙️ Конфигурациски фајлови</h2>
+<table>
+<tr><th>Фајл</th><th>Опис</th></tr>
+<tr><td>vite.config.ts</td><td>Vite build конфигурација</td></tr>
+<tr><td>postcss.config.js</td><td>PostCSS + Tailwind</td></tr>
+<tr><td>tsconfig.json</td><td>TypeScript конфигурација</td></tr>
+<tr><td>components.json</td><td>Shadcn/UI тема и стил</td></tr>
+</table>
+
+</body>
+</html>
