@@ -1,73 +1,57 @@
-# Welcome to your Lovable project
+# Home Sweet Home
 
-## Project info
+A marketing website for **Home Sweet Home**, a family-run home textiles store in Kavadarci, North Macedonia. The site presents the store's product categories, catalog highlights, and contact details for both walk-in and social-media customers.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+Live content is in Macedonian; this README is in English for the tech docs. The original scaffold README (from [Lovable](https://lovable.dev)) has been kept as [`LOVABLE_README.md`](./LOVABLE_README.md).
 
-## How can I edit this code?
+## About the business
 
-There are several ways of editing your application.
+Home Sweet Home has operated for 5+ years at ул. Илинденска бр.4е, Кавадарци, selling:
 
-**Use Lovable**
+- Bedding (single, double, and children's/baby sets — постелнини)
+- Pajamas for men, women, and kids (пижами)
+- Towels (крпи и пешкири)
+- Baby products (бебешки производи)
+- Travel suitcases (куфери)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+Customers can reach the store by phone, email, WhatsApp, or through its Facebook, Instagram, and TikTok pages, all linked from the site header/footer.
 
-Changes made via Lovable will be committed automatically to this repo.
+## Tech stack
 
-**Use your preferred IDE**
+- [Vite](https://vitejs.dev/) + [React 18](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
+- [shadcn-ui](https://ui.shadcn.com/) components on top of [Radix UI](https://www.radix-ui.com/) primitives
+- [Tailwind CSS](https://tailwindcss.com/) (custom theme: Playfair Display for headings, Lato for body text; brand colors defined as CSS variables in `src/index.css`)
+- [React Router](https://reactrouter.com/), [React Hook Form](https://react-hook-form.com/) + [Zod](https://zod.dev/), [TanStack Query](https://tanstack.com/query)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Project structure
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```
+src/
+  components/          Page sections: Header, HeroSection, CategoriesSection,
+                        ProductsSection, AboutSection, TestimonialsSection,
+                        GallerySection, ContactSection, Footer
+  components/ui/        shadcn-ui primitives (button, dialog, input, etc.)
+  pages/                 Route-level pages (Index, NotFound)
+  assets/                 Product photos and site imagery
+  hooks/, lib/            Shared hooks and utilities
+public/
+  design-reference.md    Quick lookup for where fonts/colors/components live
 ```
 
-**Edit a file directly in GitHub**
+See [`public/design-reference.md`](./public/design-reference.md) for a fast pointer to where fonts, colors, and layout settings are configured if you need to restyle the site.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Getting started
 
-**Use GitHub Codespaces**
+Requires Node.js (install via [nvm](https://github.com/nvm-sh/nvm#installing-and-updating) if needed).
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```sh
+npm install
+npm run dev       # start the dev server with hot reload
+npm run build     # production build
+npm run preview   # preview the production build locally
+npm run lint      # run ESLint
+```
 
-## What technologies are used for this project?
+## Deployment
 
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+This project can still be opened and published through [Lovable](https://lovable.dev) (see `LOVABLE_README.md` for that workflow), or built with `npm run build` and deployed as a static site to any host.
