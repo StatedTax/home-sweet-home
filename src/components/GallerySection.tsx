@@ -73,7 +73,7 @@ const GallerySection = () => {
         {/* Instagram CTA */}
         <div className="text-center mt-12">
           <a
-            href="https://www.instagram.com/home_sweet_home_kavadarci"
+            href="https://www.instagram.com/homee.sweet.homeee/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-primary hover:text-primary/80 font-medium transition-colors"

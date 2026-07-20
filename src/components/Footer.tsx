@@ -1,5 +1,5 @@
 import { Phone, MapPin, Mail, Clock } from "lucide-react";
-import logoImg from "@/assets/dada.png";
+import logoImg from "@/assets/logoImg.jpg";
 
 const Footer = () => {
   return (
@@ -9,9 +9,9 @@ const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <img 
-              src={logoImg} 
+              src={logoImg}
               alt="Home Sweet Home" 
-              className="h-16 w-auto object-contain brightness-0 invert"
+              className="h-16 w-auto object-contain"
             />
             <p className="text-primary-foreground/80 text-sm leading-relaxed">
               Вашата дестинација за квалитетни домашни текстили, пижами и постелнини во Кавадарци.
@@ -29,7 +29,7 @@ const Footer = () => {
                 </svg>
               </a>
               <a 
-                href="https://www.instagram.com/home_sweet_home_kavadarci" 
+                href="https://www.instagram.com/homee.sweet.homeee/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="hover:opacity-80 transition-opacity bg-primary-foreground/10 p-2.5 rounded-full hover:bg-primary-foreground/20"
@@ -94,7 +94,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" />
-                <span className="text-primary-foreground/80">ул. Илинденска бр.4е, Кавадарци</span>
+                <span className="text-primary-foreground/80">ул. Илинденска бр.42, Кавадарци</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 flex-shrink-0" />

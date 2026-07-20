@@ -32,7 +32,7 @@ const ContactSection = () => {
                 </div>
                 <h3 className="font-semibold text-foreground mb-2">Адреса</h3>
                 <p className="text-muted-foreground text-sm">
-                  ул. Илинденска бр.4е<br />
+                  ул. Илинденска бр.42<br />
                   Кавадарци, Македонија
                 </p>
               </div>

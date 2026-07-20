@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Menu, X, Phone, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logoImg from "@/assets/dada.png";
+import logoImg from "@/assets/logoImg.jpg";
 
 const navLinks = [
   { name: "Почетна", href: "#hero" },
@@ -26,7 +26,7 @@ const Header = () => {
             </a>
             <span className="hidden sm:flex items-center gap-1">
               <MapPin className="w-3.5 h-3.5" />
-              <span>ул. Илинденска бр.4е, Кавадарци</span>
+              <span>ул. Илинденска бр.42, Кавадарци</span>
             </span>
           </div>
           <div className="flex items-center gap-3">
@@ -42,7 +42,7 @@ const Header = () => {
               </svg>
             </a>
             <a 
-              href="https://www.instagram.com/home_sweet_home_kavadarci" 
+              href="https://www.instagram.com/homee.sweet.homeee/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="hover:opacity-80 transition-opacity"
