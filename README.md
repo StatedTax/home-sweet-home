@@ -6,7 +6,7 @@ Live content is in Macedonian; this README is in English for the tech docs. The 
 
 ## About the business
 
-Home Sweet Home has operated for 5+ years at ул. Илинденска бр.4е, Кавадарци, selling:
+Home Sweet Home has operated for 5+ years at ул. Илинденска бр.42, Кавадарци, selling:
 
 - Bedding (single, double, and children's/baby sets — постелнини)
 - Pajamas for men, women, and kids (пижами)
